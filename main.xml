@@ -1,5 +1,5 @@
 <Ui>
-<Frame name="WorldOfWarcraftAddOnIntermediate" parent="UIParent" hidden="false">
+<Frame name="WorldOfWarcraftAddOnIntermediate" parent="UIParent" hidden="false" movable="true" inherits="ButtonFrameTemplate" enableMouse="true">
   <Size x="234" y="300"/>
   <Anchors>
     <Anchor point="CENTER"/>
@@ -12,7 +12,7 @@
     </Layer>
   </Layers>
   <Frames>
-    <Button name="$parentButton" text="Click me!">
+    <!-- <Button name="$parentButton" text="Click me!">
       <Size x="120" y="21"/>
       <Anchors>
         <Anchor point="CENTER"/>
@@ -20,14 +20,19 @@
       <Layers>
         <Layer level="BACKGROUND">
           <Texture setAllPoints="true">
-            <Color r="0" g="0" b="1" a="1"/>
+            <Color r=".25" g=".25" b=".25" a="1"/>
           </Texture>
         </Layer>
       </Layers>
       <NormalFont style="GameFontNormal"/>
       <PushedFont style="GameFontNormal"/>
       <HighlightFont style="GameFontHighlight"/>
-    </Button>
+      <Scripts>
+    
+   <OnClick>message('Hi how are you I am good what up')</OnClick>
+  </Scripts>
+    </Button> -->
+    
   </Frames>
   <Scripts>
     <OnLoad>
