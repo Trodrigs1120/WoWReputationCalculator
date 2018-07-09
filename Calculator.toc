@@ -1,0 +1,7 @@
+## Interface: 70300
+## Title: |c52ABD473Moonrunes|r' Rep Calculator
+## Author: Moonrunes
+## Version: 0.1
+
+main.lua
+main.xml
