@@ -15,7 +15,7 @@
 <EditBox name="Box1">
 <Size x="120" y="21"/>
 <Anchors>
-        <Anchor point="Top"/>
+        <Anchor point="CENTER"/>
       </Anchors>
       <Layers>
         <Layer level="BACKGROUND">
@@ -26,11 +26,15 @@
       </Layers>
 
 <FontString inherits="GameFontNormal"/>
+
+
+
 </EditBox>
-<EditBox name="Box2">
+<!-- <EditBox name="Box2" >
+
 <Size x="120" y="21"/>
 <Anchors>
-        <Anchor point="CENTER"/>
+        <Anchor point="CENTER" relativePoint="CENTER" x="0" y="-20"/>
       </Anchors>
       <Layers>
         <Layer level="BACKGROUND">
@@ -41,11 +45,11 @@
       </Layers>
 
 <FontString inherits="GameFontNormal"/>
-</EditBox>
-    <!-- <Button name="$parentButton" text="Click me!">
+</EditBox> -->
+    <Button name="$parentButton" text="Click me!" >
       <Size x="120" y="21"/>
       <Anchors>
-        <Anchor point="CENTER"/>
+        <Anchor point="CENTER" relativePoint="CENTER" x="0" y="-50"/>
       </Anchors>
       <Layers>
         <Layer level="BACKGROUND">
@@ -59,9 +63,9 @@
       <HighlightFont style="GameFontHighlight"/>
       <Scripts>
     
-   <OnClick>message('Hi how are you I am good what up')</OnClick>
+   <OnClick> num = editBox:GetNumber() message('you typed' + num)</OnClick>
   </Scripts>
-    </Button> -->
+    </Button>
     
   </Frames>
   <Scripts>
